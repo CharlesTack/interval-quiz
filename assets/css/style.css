@@ -9,6 +9,15 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.heading-container {
+    background-color: rgba(211, 211, 211, 0.7); /* Light grey semi-transparent */
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 #quiz-container {
     background-color: #ffffff;
     padding: 20px;
