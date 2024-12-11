@@ -33,3 +33,16 @@ body {
     margin: 5px 0;
 }
 
+#play-area, #answer-area {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 767.98px) {
+    #play-area, #answer-area {
+        margin-bottom: 20px;
+    }
+}
+

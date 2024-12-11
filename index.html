@@ -32,12 +32,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Instructions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Feedback</a>
                     </li>
                 </ul>
@@ -53,12 +47,26 @@
             <button id="instructions-btn" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionsModal">Instructions</button>
             <button id="reset-btn" class="btn btn-warning">Reset Quiz</button>
         </div>
-        <div id="quiz-container" class="mt-4">
-            <div id="question" class="mb-3"></div>
-            <div id="options" class="mb-3 d-grid gap-2"></div>
-            <button id="submit-btn" class="btn btn-primary w-100">Submit</button>
+        <div class="row mt-4">
+            <div class="col-md-6" id="play-area">
+                <h2>Play Area</h2>
+                <audio controls>
+                    <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="col-md-6" id="answer-area">
+                <h2>Answer Area</h2>
+                <button class="btn btn-primary mb-2">Answer 1</button>
+                <button class="btn btn-primary mb-2">Answer 2</button>
+                <button class="btn btn-primary mb-2">Answer 3</button>
+                <button class="btn btn-primary mb-2">Answer 4</button>
+            </div>
         </div>
-        <div id="result" class="mt-3 text-center"></div>
     </div>
 
     <!-- Instructions Modal -->
