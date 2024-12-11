@@ -1,9 +1,23 @@
 /* FILE: assets/css/style.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Gabarito:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Paprika&display=swap');
+
+
+  
+
 body {
     background: url('../images/background/background2.webp') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
 }
+
+.gabarito-400 {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
