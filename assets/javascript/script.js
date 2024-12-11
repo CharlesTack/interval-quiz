@@ -53,11 +53,25 @@ function showResult() {
     resultElement.textContent = `You scored ${score} out of ${questions.length}`;
 }
 
-document.getElementById('submit-btn').addEventListener('click', () => {
+function addEventListeners(element, eventTypes, handler) {
+    eventTypes.forEach(eventType => {
+        element.addEventListener(eventType, handler);
+    });
+}
+
+addEventListeners(document.getElementById('submit-btn'), ['click', 'touchstart'], () => {
     const selectedOption = document.querySelector('input[name="option"]:checked');
     if (selectedOption) {
         selectOption(selectedOption.value);
     }
+});
+
+addEventListeners(document.getElementById('instructions-btn'), ['click', 'touchstart'], () => {
+    // Instructions button logic (if any) goes here
+});
+
+addEventListeners(document.getElementById('reset-btn'), ['click', 'touchstart'], () => {
+    // Reset Quiz button logic will be added here
 });
 
 loadQuestion();

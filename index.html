@@ -49,12 +49,35 @@
         <div class="heading-container">
             <h1 class="text-center">Musical Interval Quiz</h1>
         </div>
+        <div class="d-flex justify-content-between mt-3">
+            <button id="instructions-btn" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionsModal">Instructions</button>
+            <button id="reset-btn" class="btn btn-warning">Reset Quiz</button>
+        </div>
         <div id="quiz-container" class="mt-4">
             <div id="question" class="mb-3"></div>
             <div id="options" class="mb-3 d-grid gap-2"></div>
             <button id="submit-btn" class="btn btn-primary w-100">Submit</button>
         </div>
         <div id="result" class="mt-3 text-center"></div>
+    </div>
+
+    <!-- Instructions Modal -->
+    <div class="modal fade" id="instructionsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="instructionsModalLabel">Instructions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Instructions content goes here -->
+                    <p>Here are the instructions for the quiz...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap Script -->
