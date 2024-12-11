@@ -54,28 +54,31 @@
             <button id="reset-btn" class="btn btn-warning">Reset Quiz</button>
         </div>
         <div class="row mt-4">
-            <div class="col-md-6" id="play-area-header">
-                <h2>Play Area</h2>
+            <div class="col-md-6 d-flex flex-column">
+                <div id="play-area-header" class="header-box">
+                    <h2>Play Area</h2>
+                </div>
+                <div id="play-area" class="content-box">
+                    <audio controls>
+                        <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls>
+                        <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="col-md-6" id="play-area">
-                <audio controls>
-                    <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <audio controls>
-                    <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="col-md-6" id="answer-area-header">
-                <h2>Answer Area</h2>
-            </div>
-            <div class="col-md-6" id="answer-area">
-                <h2>Answer Area</h2>
-                <button class="btn btn-primary mb-2">Answer 1</button>
-                <button class="btn btn-primary mb-2">Answer 2</button>
-                <button class="btn btn-primary mb-2">Answer 3</button>
-                <button class="btn btn-primary mb-2">Answer 4</button>
+            <div class="col-md-6 d-flex flex-column">
+                <div id="answer-area-header" class="header-box">
+                    <h2>Answer Area</h2>
+                </div>
+                <div id="answer-area" class="content-box">
+                    <button class="btn btn-primary mb-2">Answer 1</button>
+                    <button class="btn btn-primary mb-2">Answer 2</button>
+                    <button class="btn btn-primary mb-2">Answer 3</button>
+                    <button class="btn btn-primary mb-2">Answer 4</button>
+                </div>
             </div>
         </div>
     </div>
