@@ -33,7 +33,7 @@ body {
     margin: 5px 0;
 }
 
-#play-area, #answer-area {
+#play-area, #answer-area, #play-area-header, #answer-area-header {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
